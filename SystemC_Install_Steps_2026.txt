@@ -1,0 +1,30 @@
+•	Download and Extract SystemC 3.0.0 -> 'Core SystemC Language and Examples' from https://www.accellera.org/downloads/standards/systemc
+•	extract systemc-3.0.0.tar.zip file (Double Click)
+#--------------------- BEGIN INSTALLATION ----------------------#
+Open a terminal in extracted folder and do the following steps
+	sudo ln -s /usr/bin/make /usr/bin/gmake
+	sudo apt install g++
+	mkdir objdir
+	cd objdir
+	export PATH=/usr/bin/g++:$PATH
+	export SYSTEMC_HOME=/usr/local/systemc-3.0.0/
+	export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib-linux64
+	sh ../configure --prefix=/usr/local/systemc-3.0.0
+	gmake
+	sudo gmake install
+	cd ..
+#--------------------- SystemC INSTALLATION COMPLETE ----------------------#
+
+#--------------------- BEGIN GTK Wave INSTALLATION ----------------------#
+	sudo apt-get update -y
+	sudo apt-get install -y gtkwave
+#--------------------- GTK Wave INSTALLATION COMPLETE ----------------------#
+
+
+
+find / -name systemc.h 2>/dev/null
+export SYSTEMC_HOME=/usr/local/systemc-3.0.2
+export LD_LIBRARY_PATH=$SYSTEMC_HOME/lib-linux64:$LD_LIBRARY_PATH
+g++ -I$SYSTEMC_HOME/include -L$SYSTEMC_HOME/lib-linux64 -o abhi and_gate_tb.cpp -lsystemc
+
+

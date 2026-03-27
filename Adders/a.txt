@@ -1,0 +1,15 @@
+cmd to install ollama: 
+ curl -fsSL https://ollama.com/install.sh | sh
+ 
+ cmd to install model:
+ ollama run deepseek-coder:6.7b
+ 
+ cmd to run in background:
+ systemctl status ollama
+ sudo systemctl start ollama
+ sudo systemctl enable ollama
+ 
+ cmd to run model:
+ ollama run deepseek-coder:6.7b
+ 
+ ollama list

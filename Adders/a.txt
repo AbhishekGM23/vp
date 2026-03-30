@@ -2,6 +2,7 @@ cmd to install ollama:
  curl -fsSL https://ollama.com/install.sh | sh
  
  cmd to install model:
+ ollama pull qwen2.5-coder:14b
  ollama run deepseek-coder:6.7b
  
  cmd to run in background:

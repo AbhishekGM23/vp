@@ -1,5 +1,5 @@
 $date
-     Apr 07, 2026       17:39:14
+     Apr 07, 2026       22:01:28
 $end
 
 $version
@@ -13,7 +13,7 @@ $end
 $scope module SystemC $end
 $var wire    1  aaaaa  d       $end
 $var wire    1  aaaab  r       $end
-$var wire    1  aaaac  testclk       $end
+$var wire    1  aaaac  clk       $end
 $upscope $end
 $enddefinitions  $end
 
@@ -31,28 +31,26 @@ $end
 0aaaac
 
 #10000
-0aaaaa
 1aaaac
 
 #15000
 0aaaac
 
 #20000
-1aaaaa
+0aaaaa
 1aaaac
 
 #25000
 0aaaac
 
 #30000
-0aaaaa
+1aaaaa
 1aaaac
 
 #35000
 0aaaac
 
 #40000
-1aaaaa
 1aaaac
 
 #45000
@@ -68,7 +66,6 @@ $end
 
 #60000
 1aaaaa
-0aaaab
 1aaaac
 
 #65000
@@ -76,7 +73,6 @@ $end
 
 #70000
 0aaaaa
-1aaaab
 1aaaac
 
 #75000
@@ -97,17 +93,42 @@ $end
 0aaaac
 
 #100000
-0aaaab
 1aaaac
 
 #105000
 0aaaac
 
 #110000
-1aaaab
+0aaaab
 1aaaac
 
 #115000
 0aaaac
 
 #120000
+1aaaab
+1aaaac
+
+#125000
+0aaaac
+
+#130000
+0aaaab
+1aaaac
+
+#135000
+0aaaac
+
+#140000
+1aaaac
+
+#145000
+0aaaac
+
+#150000
+1aaaac
+
+#155000
+0aaaac
+
+#160000

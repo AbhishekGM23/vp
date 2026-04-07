@@ -6,6 +6,7 @@
 int sc_main(int argc, char* argv[])
 {
 	sc_signal<sc_logic> d,r;
+	sc_signal<sc_lv<4>> reg_sig;
 	sc_clock  testclk("testclock",10,SC_NS,0.5);
 
 	siso siso1("siso");
@@ -23,7 +24,7 @@ int sc_main(int argc, char* argv[])
 	sc_trace(Tf, r, "r");
 	sc_trace(Tf,testclk,"testclk");
 	
-	sc_start(60, SC_NS);
+	sc_start(100, SC_NS);
 	sc_close_vcd_trace_file(Tf);
 	return 0; 
 }

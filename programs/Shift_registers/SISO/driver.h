@@ -17,6 +17,14 @@ SC_MODULE(driver)
 		wait();
 		d = sc_logic_0;
 		wait();
+		d = sc_logic_1;
+		wait();
+		d = sc_logic_0;
+		wait();
+		d = sc_logic_1;
+		wait();
+		d = sc_logic_0;
+		wait();
 	}
 		SC_CTOR(driver)
 		{

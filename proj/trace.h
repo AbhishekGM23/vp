@@ -3,15 +3,16 @@
 
 #include <systemc>
 using namespace sc_core;
+using namespace sc_dt;
 
 // Trace variables
 sc_trace_file *tf;
 
 // Signals to trace
-sc_signal<int> count_sig;
-sc_signal<int> ctrl_sig;
-sc_signal<int> cmp_sig;
-sc_signal<int> irq_status_sig;
+sc_signal<sc_uint<32>> count_sig;
+sc_signal<sc_uint<32>> ctrl_sig;
+sc_signal<sc_uint<32>> cmp_sig;
+sc_signal<sc_uint<32>> irq_status_sig;
 
 // Setup trace file
 void init_trace()
